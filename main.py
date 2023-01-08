@@ -8,6 +8,8 @@ def main() -> None:
     bob = Person("bob", expertise=[0.5, 0.3, 0.4])
 
     alice.join(org)
+    x = alice.work([0.4, 0.4, 0.2])
+    print(x)
 
     for m in org._members:
         print(m.name)

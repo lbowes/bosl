@@ -2,6 +2,8 @@
 # state of any real organisation, defined as a group of individuals working
 # towards a shared goal.
 # What is true of *any* organisation?
+import numpy as np
+
 
 class Person:
     pass
@@ -13,14 +15,6 @@ class Organisation:
 
     def enrol(self, new_member: Person) -> None:
         self._members.add(new_member)
-
-
-class Work:
-    def __init__(self):
-        # todo: what relationship does this have to expertise?
-        # value(expertise, work) ?
-        pass
-        #self._requirements: list[]
 
 
 class Proficiency(float):
@@ -46,6 +40,12 @@ class Person:
 
     def join(self, org: Organisation) -> None:
         org.enrol(self)
+
+    def work(self, task):
+        task_sum = sum(task)
+        normalized_task = [x / task_sum for x in task]
+        value = max(0, np.dot(self._expertise, normalized_task))
+        return value
 
     @property
     def name(self) -> str:
