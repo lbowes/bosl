@@ -1,4 +1,5 @@
-from data import Organisation, Person
+from model.organisation import Organisation
+from model.person import Person
 
 
 def main() -> None:

@@ -1,20 +1,4 @@
-# TODO: This file should define a language that makes it possible to encode the
-# state of any real organisation, defined as a group of individuals working
-# towards a shared goal.
-# What is true of *any* organisation?
 import numpy as np
-
-
-class Person:
-    pass
-
-
-class Organisation:
-    def __init__(self):
-        self._members: set[Person] = set()
-
-    def enrol(self, new_member: Person) -> None:
-        self._members.add(new_member)
 
 
 class Proficiency(float):

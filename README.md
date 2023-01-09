@@ -1,3 +1,3 @@
 # osl
-Organisation Simulation Library allows users to quickly create virtual
-organisations.
+Organisation Simulation Library defines a language that can be used to describe
+the state of any organisation.
