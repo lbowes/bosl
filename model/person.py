@@ -17,6 +17,10 @@ class Proficiency(float):
 Expertise = list[Proficiency]
 
 
+class Organisation:
+    pass
+
+
 class Person:
     def __init__(self, name: str, expertise: Expertise) -> None:
         self._name: str = name
