@@ -1,3 +1,4 @@
+from model.activity import Activity
 import numpy as np
 
 
@@ -25,6 +26,7 @@ class Person:
     def __init__(self, name: str, expertise: Expertise) -> None:
         self._name: str = name
         self._expertise: Expertise = [Proficiency(x) for x in expertise]
+        self._activity: Activity = None
 
     def join(self, org: Organisation) -> None:
         org.enrol(self)
