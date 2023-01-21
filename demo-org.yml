@@ -1,0 +1,8 @@
+company:
+  name: Some Company Ltd
+  number: 12345678
+  members:
+    - name: Alice
+      project: A
+    - name: Bob
+      project: B

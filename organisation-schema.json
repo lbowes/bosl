@@ -1,0 +1,43 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "company": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "number": {
+                    "type": "integer"
+                },
+                "members": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "name": {
+                                "type": "string"
+                            },
+                            "project": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "name",
+                            "project"
+                        ]
+                    }
+                }
+            },
+            "required": [
+                "name",
+                "number",
+                "members"
+            ]
+        }
+    },
+    "required": [
+        "company"
+    ]
+}
