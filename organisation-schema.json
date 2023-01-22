@@ -11,6 +11,10 @@
                 "number": {
                     "type": "integer"
                 },
+                "date-of-incorporation": {
+                    "type": "string",
+                    "format": "date-time"
+                },
                 "members": {
                     "type": "array",
                     "items": {
@@ -33,6 +37,7 @@
             "required": [
                 "name",
                 "number",
+                "date-of-incorporation",
                 "members"
             ]
         }

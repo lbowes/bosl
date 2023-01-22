@@ -1,6 +1,7 @@
 company:
   name: Some Company Ltd
   number: 12345678
+  date-of-incorporation: 2023-01-16
   members:
     - name: Alice
       project: A
